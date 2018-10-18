@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Periodic Games</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+	<section class="background">
+		<h2 id="title" class="game-title">Jogo da Tabela Periódica</h2>
+		<div id="imgTable" class="img-table-wrapper"><img src="./img/img-periodic-table.png" class="img-table"></div>
+		<section id="panel" class="panel-wrapper">
+			<div class="score-wrapper">
+				<span class="score-text">Restam<span class="score-value score-remain">41</span></span>
+				<span class="score-text">Acertos<span class="score-value score-hits">0/41</span></span>
+				<span class="score-text">Erros<span class="score-value score-errors">0/3</span></span>
+			</div>
+			<div class="timer-wrapper">
+				<span id="timer">03:00</span>
+			</div>
+		</section>
+				
+		<section id="start" class="start-wrapper">
+			<input type="submit" id="btnStart" class="btn btn-start" value="Começar">
+		</section>
+
+		<section id="game" class="game-wrapper">
+			<a id="elementPrevious" class="btn-iterator" href="javascript:void(0)"><img src="./img/previous.ico" class=" img-button img-previous"></a>
+			<div id="elementBox" class="element-box">
+				<div id="eBoxName" class="ebox-text"></div>
+			</div>
+			<p id="textGame" class="game-text"></p>
+			<a id="elementNext" class="btn-iterator" href="javascript:void(0)"><img src="./img/previous.ico" class="img-button img-next"></a>
+		</section>
+
+		<section id="periodic-table-container">
+			<div class="table-wrapper">
+				<div class="element_row">
+					<div id="element_1" class="e_7 element" atomicnumber="1"><div id="element_no_1" class="element_no">1</div><div id="element_name_1" class="element_name">H</div></div>
+					<div class="element_blank"></div><div class="element_blank"></div><div class="element_blank"></div>
+					<div class="element_blank"></div><div class="element_blank"></div><div class="element_blank"></div>
+					<div class="element_blank"></div><div class="element_blank"></div><div class="element_blank"></div>
+					<div class="element_blank"></div><div class="element_blank"></div><div class="element_blank"></div>
+					<div class="element_blank"></div><div class="element_blank"></div><div class="element_blank"></div>
+					<div class="element_blank"></div>
+					<div id="element_2" class="e_9 element" atomicnumber="2"><div id="element_no_2" class="element_no">2</div><div id="element_name_2" class="element_name">He</div>
+					</div>	
+				</div>
+				<div class="element_row">
+					<div id="element_3" class="e_1 element">
+						<div id="element_no_3" class="element_no">3</div><div id="element_name_3" class="element_name">Li</div>
+					</div>
+					<div id="element_4" class="e_2 element">
+						<div id="element_no_4" class="element_no">4</div><div id="element_name_4" class="element_name">Be</div></div>
+					<div class="element_blank"></div><div class="element_blank"></div><div class="element_blank"></div>
+					<div class="element_blank"></div><div class="element_blank"></div><div class="element_blank"></div>
+					<div class="element_blank"></div><div class="element_blank"></div><div class="element_blank"></div>
+					<div class="element_blank"></div>
+					<div id="element_5" class="e_10 element"><div id="element_no_5" class="element_no">5</div><div id="element_name_5" class="element_name">B</div></div>
+					<div id="element_6" class="e_7 element"><div id="element_no_6" class="element_no">6</div><div id="element_name_6" class="element_name">C</div></div>
+					<div id="element_7" class="e_7 element"><div id="element_no_7" class="element_no">7</div><div id="element_name_7" class="element_name">N</div></div>
+					<div id="element_8" class="e_7 element"><div id="element_no_8" class="element_no">8</div><div id="element_name_8" class="element_name">O</div></div>
+					<div id="element_9" class="e_8 element"><div id="element_no_9" class="element_no">9</div><div id="element_name_9" class="element_name">F</div></div>
+					<div id="element_10" class="e_9 element"><div id="element_no_10" class="element_no">10</div><div id="element_name_10" class="element_name">Ne</div></div>
+				</div>
+
+				<div class="element_row">
+					<div id="element_11" class="e_1 element"><div id="element_no_11" class="element_no">11</div><div id="element_name_11" class="element_name">Na</div></div>
+					<div id="element_12" class="e_2 element"><div id="element_no_12" class="element_no">12</div><div id="element_name_12" class="element_name">Mg</div></div>
+					<div class="element_blank"></div><div class="element_blank"></div><div class="element_blank"></div>
+					<div class="element_blank"></div><div class="element_blank"></div><div class="element_blank"></div>
+					<div class="element_blank"></div><div class="element_blank"></div><div class="element_blank"></div>
+					<div class="element_blank"></div>
+					<div id="element_13" class="e_4 element"><div id="element_no_13" class="element_no">13</div><div id="element_name_13" class="element_name">Al</div></div>
+					<div id="element_14" class="e_10 element"><div id="element_no_14" class="element_no">14</div><div id="element_name_14" class="element_name">Si</div></div>
+					<div id="element_15" class="e_7 element"><div id="element_no_15" class="element_no">15</div><div id="element_name_15" class="element_name">P</div></div>
+					<div id="element_16" class="e_7 element"><div id="element_no_16" class="element_no">16</div><div id="element_name_16" class="element_name">S</div></div>
+					<div id="element_17" class="e_8 element"><div id="element_no_17" class="element_no">17</div><div id="element_name_17" class="element_name">Cl</div></div>
+					<div id="element_18" class="e_9 element"><div id="element_no_18" class="element_no">18</div><div id="element_name_18" class="element_name">Ar</div></div>
+				</div>
+
+				<div class="element_row">
+					<div id="element_19" class="e_1 element"><div id="element_no_19" class="element_no">19</div><div id="element_name_19" class="element_name">K</div></div>
+					<div id="element_20" class="e_2 element"><div id="element_no_20" class="element_no">20</div><div id="element_name_20" class="element_name">Ca</div></div>
+					<div id="element_21" class="e_3 element"><div id="element_no_21" class="element_no">21</div><div id="element_name_21" class="element_name">Sc</div></div>
+					<div id="element_22" class="e_3 element"><div id="element_no_22" class="element_no">22</div><div id="element_name_22" class="element_name">Ti</div></div>
+					<div id="element_23" class="e_3 element"><div id="element_no_23" class="element_no">23</div><div id="element_name_23" class="element_name">V</div></div>
+					<div id="element_24" class="e_3 element"><div id="element_no_24" class="element_no">24</div><div id="element_name_24" class="element_name">Cr</div></div>
+					<div id="element_25" class="e_3 element"><div id="element_no_25" class="element_no">25</div><div id="element_name_25" class="element_name">Mn</div></div>
+					<div id="element_26" class="e_3 element"><div id="element_no_26" class="element_no">26</div><div id="element_name_26" class="element_name">Fe</div></div>
+					<div id="element_27" class="e_3 element"><div id="element_no_27" class="element_no">27</div><div id="element_name_27" class="element_name">Co</div></div>
+					<div id="element_28" class="e_3 element"><div id="element_no_28" class="element_no">28</div><div id="element_name_28" class="element_name">Ni</div></div>
+					<div id="element_29" class="e_3 element"><div id="element_no_29" class="element_no">29</div><div id="element_name_29" class="element_name">Cu</div></div>
+					<div id="element_30" class="e_3 element"><div id="element_no_30" class="element_no">30</div><div id="element_name_30" class="element_name">Zn</div></div>
+					<div id="element_31" class="e_4 element"><div id="element_no_31" class="element_no">31</div><div id="element_name_31" class="element_name">Ga</div></div>
+					<div id="element_32" class="e_10 element"><div id="element_no_32" class="element_no">32</div><div id="element_name_32" class="element_name">Ge</div></div>
+					<div id="element_33" class="e_10 element"><div id="element_no_33" class="element_no">33</div><div id="element_name_33" class="element_name">As</div></div>
+					<div id="element_34" class="e_7 element"><div id="element_no_34" class="element_no">34</div><div id="element_name_34" class="element_name">Se</div></div>
+					<div id="element_35" class="e_8 element"><div id="element_no_35" class="element_no">35</div><div id="element_name_35" class="element_name">Br</div></div>
+					<div id="element_36" class="e_9 element"><div id="element_no_36" class="element_no">36</div><div id="element_name_36" class="element_name">Kr</div></div>
+				</div>
+			</div>
+		</section>
+		
+		<footer class="footer">
+			<p class="text-footer">Anderson Tchuy | Alanna Vitória</p>
+		</footer>
+	</section>
+</body>
+	<script type="text/javascript" src="./script/index.js"></script>
+</html>

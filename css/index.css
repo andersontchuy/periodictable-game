@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Acme');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: Arial, Tahoma, sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+.background {
+	background-size: contain;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.game-title {
+	font-family: 'Acme', sans-serif;
+	margin: 25px;
+	color: #365899;
+	font-size: 2.7em;
+	text-align: center;
+}
+
+.panel-wrapper,
+.score-wrapper,
+.start-wrapper,
+.element-box,
+.img-table-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-table {
+	width: 65%
+}
+
+.score-wrapper {
+	border: 1px solid blue;
+}
+
+.score-text {
+	font-size: 18px;
+	margin: 20px 80px;
+}
+
+.score-value {
+	font-size: 25px;
+	display: block;
+	text-align: center;
+}
+
+.score-hits {
+	color: #34A853;
+}
+
+.score-errors {
+	color: #EA4335;
+}
+
+.timer-wrapper {
+	font-size: 43px;
+	padding: 20px;
+	margin-left: 5px;
+	border: 1px solid green;
+}
+
+.btn {
+	font-weight: bold;
+	padding: 15px;
+	width: 100px;
+	color: #fff;
+}
+
+.btn:hover {
+	cursor: pointer;
+	font-size: 16px;
+	box-shadow: 5px 5px 5px #ccc;
+}
+
+.btn-start {
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #365899;
+}
+
+.panel-wrapper {
+	display: none;
+}
+
+.game-wrapper {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	margin-top: 35px;
+	height: 150px;
+}
+
+.img-button {
+	width: 125px;
+}
+
+.img-button:active {
+	height: 100px;
+}
+
+.img-next {
+	transform: rotate(180deg)
+}
+
+.element-box {
+	width: 350px;
+	height: 100px;
+	border: 1px solid #365899;
+	border-radius: 10px;
+}
+
+.ebox-text {
+	font-size: 3.5em;
+	font-weight: bold;
+	color: #365899;
+}
+
+.game-text {
+	color: #FBBC05;
+	font-size: 5em;
+	text-shadow: 5px 5px 5px #ccc;
+	margin-top: 10%;
+}
+
+/*-------------------------------------------------
+	Tabela periódica
+-------------------------------------------------*/
+#periodic-table-container {
+	display: none;
+}
+
+.table-wrapper {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.element_row {
+	padding-bottom: 4px;
+	/*border: 1px solid green;*/
+}
+
+.element {
+	background-color: #c2c2c2;
+	color: #0d0d0d;
+}
+
+.element:hover {
+	background-color: #666666;
+	color: #ffffff;
+}
+
+.element, .element_hover, 
+.element_blank {
+	float: left;
+	position: relative;
+	height: 48px;
+	width: 50px;
+	margin-right: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.element, .element_hover {
+	cursor: pointer;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+	border-radius: 2px;
+}
+
+.element_no {
+  font-size: 11px;
+  padding-left: 6px;
+  margin-top: 2px;
+}
+
+.element_name {
+  text-align: center;
+  margin-top: 2px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  
+}
+
+.element_blank {
+	/*border: 1px solid red;*/
+}
+
+/*---------------------------------------------
+	Rodapé
+---------------------------------------------*/
+
+.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		background-color: #000;
+		filter: opacity(60%);
+}		
+
+.text-footer {
+	margin: 1%;
+	color: #fff;
+	font-size: 0.7em;
+	font-family: 'Orbitron', sans-serif;
+	text-align: right;
+}
+
